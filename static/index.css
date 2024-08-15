@@ -1,0 +1,132 @@
+:root {
+    --bg-color: #f7f7f7;
+    --color: #3c4245;
+    --body-width: 800px;
+    --headings-color: #58a6ff;
+    --link-color: #ff5b89;
+    --code-bg-color: var(--color);
+    --code-color: var(--bg-color);
+    --quote-bg-color: var(--bg-color);
+    --quote-border-color: slategray;
+    --quote-color: var(--quote-border-color);
+    --kbd-bg-color: lightslategray;
+    --kbd-border-color: darkslategray;
+    --kbd-color: var(--bg-color);
+    --mark-bg-color: pink;
+    --mark-color: var(--color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--color);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    line-height: 1.5;
+    margin: 0 auto;
+    padding: 20px;
+    max-width: var(--body-width);
+    font-weight: 300;
+}
+
+b {
+    font-weight: 900;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--heading-color);
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h4,
+h5,
+h6 {
+    font-size: 1em;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul,
+ol {
+    padding-left: 20px;
+}
+
+code {
+    background-color: var(--code-bg-color);
+    border-radius: 6px;
+    color: var(--code-color);
+    padding: 0.2em 0.4em;
+    font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+}
+
+pre code {
+    padding: 0;
+}
+
+pre {
+    background-color: var(--code-bg-color);
+    border-radius: 6px;
+    padding: 0.4em 0.8em;
+}
+
+blockquote {
+    background-color: var(--quote-bg-color);
+    border-left: 4px solid var(--quote-border-color);
+    padding-left: 2em;
+    margin: 0;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
+    color: var(--quote-color);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+kbd {
+    display: inline-block;
+    padding: 0.3em;
+    font-size: 0.7em;
+    font-family: SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace;
+    line-height: 1em;
+    color: var(--kbd-color);
+    vertical-align: text-top;
+    background-color: var(--kbd-bg-color);
+    border: solid 1px var(--kbd-border-color);
+    border-bottom-color: var(--kbd-border-color);
+    border-radius: 6px;
+    box-shadow: inset 0 -1px 0 var(--kbd-border-color);
+    text-transform: uppercase;
+}
+
+mark {
+    background-color: var(--mark-bg-color);
+    color: var(--mark-color);
+    padding: 0em 0.2em;
+}
